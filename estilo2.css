@@ -1,0 +1,104 @@
+.no-margin{
+	margin: 0;
+}
+
+.no-padding{
+	padding: 0;
+}
+.viewport{
+height: 100vh;
+}
+.red-border{
+	/*border: 1px solid red;*/
+}
+
+.width-max{
+	width: 100%;
+}
+
+.middle-section-height{
+	height: 80%;
+}
+
+.flow{
+	flex-flow: column;
+}
+.one-third-height{
+	height: 40%;
+}
+.minor-height{
+	height: 10%;
+}
+.background-app{
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(8,155,71,1) 0%, rgba(9,134,62,1) 100%);
+}
+
+.card-height{
+	height: 50%;
+}
+
+.container-cards{
+	height: 50%;
+}
+
+.card{
+	width: 70%;
+	height: 80%;
+	background-color: rgb(0 0 0 / 54%);
+	color: #f8f9fad6;
+  flex-flow: column;
+}
+
+.img-container3{
+	width: 100%;
+	height: 80%;
+	background-image: url('Imgs/datasatual.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;*/
+}
+.img-container2{
+	width: 100%;
+	height: 80%;
+	background-image: url('Imgs/datas-importantes.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.img-container1{
+	width: 100%;
+	height: 80%;
+	background-image: url('Imgs/valores.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+.details{
+	width: 100%;
+	height: 20%;
+}
+
+.card:hover{
+	height: 90%;
+	width: 80%;
+	transition: all .9s ease;
+}
+
+.container-navbar{
+	width: 100%;
+	height: 20%;
+	justify-content: flex-start;
+}
+
+.logo-container{
+	width: 20%;
+	height: 50%;
+	background-image: url('Imgs/basa-logo_do_site.webp');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;*/
+}

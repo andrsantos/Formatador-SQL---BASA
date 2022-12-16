@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Conversor de Datas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="estilo2.css">
+  </head>
+  <body>
+    
+   <div class="container-fluid no-margin no-padding viewport red-border d-flex align-items-center background-app">
+     <div class="row red-border width-max d-flex middle-section-height no-margin no-padding justify-content-center align-items-center">
+
+        <div class="col-md-4 d-flex red-border middle-section-height flow">
+ 
+           <div class="row width-max red-border one-third-height no-margin no-padding">
+           <div class="input-group no-margin no-padding">
+           <span class="input-group-text">Insira aqui as datas</span>
+           <textarea class="form-control" aria-label="With textarea" id="textarea"></textarea>
+        </div>
+     
+   </div>
+
+   <div class="row width-max red-border minor-height no-margin no-padding align-items-center justify-content-center d-flex">
+    <button type="button" class="btn btn-dark" id="botao" onclick="pegaDatas()">Converter</button>     
+   </div>
+   <div class="row width-max red-border one-third-height no-margin no-padding">
+     <div class="input-group no-margin no-padding">
+        <span class="input-group-text">Datas Convertidas</span>
+        <textarea class="form-control" aria-label="With textarea" id="resultado" readonly></textarea>
+        </div>
+   </div> 
+
+   </div>  
+   </div>
+
+   <script type="text/javascript">
+
+
+   function pegaDatas(){
+   
+   var newTextArea = [];
+   var resultado = document.getElementById('resultado');
+   var j = 0;
+   var posicaoDiaInicial = 0;
+   var posicaoDiaFinal = 0;
+   var posicaoMes = 0;
+   var posicaoMesFinal = 0;
+   var posicao = 0;
+   var posicaoFinal = 0;
+   var textarea = document.getElementById('textarea').value;
+   var cont = 0;
+   
+   
+   for(var i = 0; i < textarea.length; i++){
+    cont++;
+    if(cont == 9){
+      cont = 0;
+      console.log(i);
+      console.log(textarea[i-1]);
+      newTextArea[j] = `'` + textarea[i-2] + textarea[i-1] + '/' + textarea[i-4] + textarea[i-3] + '/' + textarea[i-8] + textarea[i-7] + textarea[i-6] + textarea[i-5] + `'`;
+      console.log(newTextArea[j]);
+      j++;
+      
+    }
+  }
+    resultado.value = "(" +  newTextArea + ")";
+   }
+
+
+     
+
+   
+
+
+   </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+  </body>
+</html>
