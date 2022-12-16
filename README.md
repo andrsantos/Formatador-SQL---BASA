@@ -7,3 +7,5 @@ O administrador, então, decide como fará a filtragem em sua consulta SQL de ex
 A solução proposta visa automatizar o processo de formatação das datas para consultas SQL. A proposta é que o usuário copie todas as datas da planilha, cole na caixa formatadora, clique em converter e receba, automaticamente, as datas encaixadas no formato de consulta SQL. Ainda há a opção de formatação de valores.
 ### RESULTADOS ###
 A ferramenta, apesar de pouco complexa, se mostrou bastante eficaz na agilização da extração das consultas, bem como aumentou o nível de satisfação dos remetentes do chamado, que agora não precisam mais dispender longos minutos em uma atividade mecânica e massante. 
+### FERRAMENTAS UTILIZADAS ###
+As funcionalidades do projeto foram inteiramente desenvolvidas em JavaScript. O front end foi desenvolvido em Bootstrap 5. Dada a natureza pouco complexa da ferramenta, não foi necessária utilização de banco de dados e/ou lado servidor.
